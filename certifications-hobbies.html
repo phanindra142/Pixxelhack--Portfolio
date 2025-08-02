@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- SEO Meta Tags -->
+<meta name="description" content="Portfolio of Rachabanti Phanindra - Aspiring Software Developer and Computer Science Student">
+<meta name="keywords" content="Rachabanti Phanindra, portfolio, software developer, Java, Python, student, resume, projects">
+<meta name="author" content="Rachabanti Phanindra">
+
+  <title>Certifications & Hobbies | Rachabanti Phanindra</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body data-page="certifications"> <!-- or "skills", "resume", "certifications" -->
+  <div id="tsparticles"></div>
+
+
+   <script>
+  document.addEventListener('click', function (e) {
+    const ripple = document.createElement('div');
+    ripple.className = 'ripple';
+     ripple.style.left = `${e.pageX - 10}px`;
+    ripple.style.top = `${e.pageY - 10}px`;
+
+    document.body.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 600);
+  });
+</script>
+  <header>
+    <div class="nav">
+      <h1>Rachabanti Phanindra</h1>
+     <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<nav class="nav-menu" id="navMenu">
+  <a href="index.html"><i class="fas fa-user icon-blue"></i> Profile</a>
+  <a href="skills-projects.html"><i class="fas fa-code icon-green"></i> Skills & Projects</a>
+  <a href="certifications-hobbies.html"><i class="fas fa-certificate icon-yellow"></i> Certifications & Hobbies</a>
+  <a href="resume-contact.html"><i class="fas fa-file-alt icon-purple"></i> Resume & Contact</a>
+</nav>
+
+    </div>
+  </header>
+
+  <main class="container hover-bg" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
+    <section id="certifications">
+      <h2><i class="fas fa-award icon-purple"></i> Certifications</h2>
+      <ul>
+        <li>Ultimate Web Designer & Developer – Udemy</li>
+        <li>Complete Java Programming – Udemy</li>
+        <li>Intro to Python – Infosys Springboard</li>
+        <li>Workshop on Intellectual Property Rights</li>
+        <li>Design Patent: Aeronova Glide (Drone)</li>
+      </ul>
+    </section>
+  </main>
+
+  <main class="container hover-bg"  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">
+    <section id="hobbies">
+      <h2><i class="fas fa-heart icon-pink"></i> Hobbies</h2>
+      <ul>
+        <li>Listening to music</li>
+        <li>Playing badminton</li>
+        <li>Meditation</li>
+      </ul>
+    </section>
+  </main>
+  <section class="marquee-section">
+  <div class="marquee-wrapper">
+    <div class="marquee-images">
+      <img src="assets/hobby1.png" alt="Tech Logo 1" />
+      <img src="assets/hobby2.png" alt="Tech Logo 2" />
+      <img src="assets/hobby3.png" alt="Tech Logo 3" />
+      <img src="assets/hobby4.png" alt="Tech Logo 4" />
+      <img src="assets/hobby5.png" alt="Tech Logo 5" />
+      
+      <!-- Duplicate for seamless looping -->
+      <img src="assets/hobby1.png" alt="Tech Logo 1" />
+      <img src="assets/hobby2.png" alt="Tech Logo 2" />
+      <img src="assets/hobby3.png" alt="Tech Logo 3" />
+      <img src="assets/hobby4.png" alt="Tech Logo 4" />
+      <img src="assets/hobby5.png" alt="Tech Logo 5" />
+      <img src="assets/hobby1.png" alt="Tech Logo 1" />
+      <img src="assets/hobby2.png" alt="Tech Logo 2" />
+      <img src="assets/hobby3.png" alt="Tech Logo 3" />
+      <img src="assets/hobby4.png" alt="Tech Logo 4" />
+      <img src="assets/hobby5.png" alt="Tech Logo 5" />
+      
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+  <div class="footer-links">
+    <a href="#">Back to Top</a> |
+    <a href="index.html">Home</a>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://linkedin.com/in/phanindra-rachabanti-22a96832b" target="_blank">
+      <i class="fab fa-linkedin icon-blue"></i>
+    </a>
+    <a href="https://github.com/phanindra142" target="_blank">
+      <i class="fab fa-github icon-gray"></i>
+    </a>
+  </div>
+
+  
+  <p>© 2025 Rachabanti Phanindra. All rights reserved.</p>
+</footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('toggle');
+    navMenu.classList.toggle('active');
+  });
+</script>
+<!-- AI Assistant Tooltip -->
+
+<script>
+  const aiTooltip = document.createElement('div');
+  aiTooltip.id = "ai-tooltip";
+  aiTooltip.innerHTML = "🤖";
+  document.body.appendChild(aiTooltip);
+
+  const tooltipBubble = document.createElement('div');
+  tooltipBubble.id = "tooltip-bubble";
+  tooltipBubble.style.display = "none";
+  document.body.appendChild(tooltipBubble);
+
+  const page = document.body.dataset.page;
+
+  const messages = {
+     index: [
+      "Hey there! explore my portfolio",
+      "Scroll to learn more about me!",
+      "Hover over sections for cool effects!"
+    ],
+    skills: [
+      "Check out my latest projects!",
+      "Hover on images to see previews!",
+      "Each project has its own story."
+    ],
+    resume: [
+      "Want to see the resume? scroll!",
+      "Use the form to message me.",
+      "You can also connect via LinkedIn!"
+    ],
+    certifications: [
+      "Look at the cool certifications!",
+      "Want to know my hobbies? Scroll!",
+      "These add to my personal flair!"
+    ]
+  };
+
+  function getRandomMessage(section) {
+    const msgs = messages[section] || ["Explore the site!"];
+    return msgs[Math.floor(Math.random() * msgs.length)];
+  }
+
+  aiTooltip.addEventListener("click", () => {
+    const msg = getRandomMessage(page);
+    tooltipBubble.innerText = msg;
+    tooltipBubble.style.display = "block";
+    tooltipBubble.style.opacity = 1;
+
+    setTimeout(() => {
+      tooltipBubble.style.opacity = 0;
+      setTimeout(() => {
+        tooltipBubble.style.display = "none";
+      }, 300);
+    }, 3000);
+  });
+</script>
+
+<!-- tsParticles Library -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+<script>
+  tsParticles.load("tsparticles", {
+    background: {
+      color: {
+        value: "transparent"
+      }
+    },
+    fullScreen: {
+      enable: true,
+      zIndex: -1
+    },
+    particles: {
+      number: {
+        value: 60
+      },
+      color: {
+        value: "#00bfff"
+      },
+      shape: {
+        type: "circle"
+      },
+      opacity: {
+        value: 0.5
+      },
+      size: {
+        value: 3,
+        random: true
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "none",
+        outModes: {
+          default: "bounce"
+        }
+      },
+      links: {
+        enable: true,
+        distance: 120,
+        color: "#00bfff",
+        opacity: 0.3,
+        width: 1
+      }
+    },
+    interactivity: {
+      events: {
+        onHover: {
+          enable: true,
+          mode: "repulse"
+        },
+        onClick: {
+          enable: true,
+          mode: "push"
+        }
+      },
+      modes: {
+        repulse: {
+          distance: 100
+        },
+        push: {
+          quantity: 2
+        }
+      }
+    },
+    detectRetina: true
+  });
+</script>
+
+</body>
+</html>
